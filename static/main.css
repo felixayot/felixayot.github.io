@@ -1,0 +1,36 @@
+html {
+    text-align: center;
+    background-color: #282c34;
+    font-family:  Sans, PingFang SC, OSPunctuation, Microsoft Yahei, Heiti SC, WenQuanYi Micro Hei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    /*font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+  }
+  ul {
+    list-style: none;
+    text-align: left;
+  }
+
+/*.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }*/
+  
