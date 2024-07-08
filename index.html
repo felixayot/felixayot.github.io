@@ -1,27 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="static/main.css"/>
-</head>
-<body>
-<h1>Hello👋, I'm <span style="color: #3090C7">Felix</span></h1>
-<div style="border-style: solid; border-color: azure; border-radius: 18px; border-width: 0.5px; padding: 2vw;">I am a software engineer proficient in the following tech stack:
-<ul style="text-align: center;">
-    <li>I build scalable software applications in the Python3 Flask framework.</li><br>
-    <li>I'm very proficient in application data modeling using the Python3 Object Relational Mapping library(SQLAlchemy) and data persistence and management using MySQL database management system.</li><br>
-    <li>I deploy software seamlessly using Ubuntu server, Nginx web servers, and gunicorn Website Gateway Interface(WSGI).</li><br>
-    <li>I'm also a maestro in source code management, maintenance, and improvement using GitHub actions, from the GitHub version control system tool.</li></ul><br>
-If you're looking to collaborate or build software that requires a robust and scalable backend infrastructure, do not hesitate to contact me on any of the below socials.
-</div><br>
-<h3>Social profiles</h3>
-<ul style="display: flex; gap: 5vw; justify-content: center;">
-<li class="fa-brands fa-github"><a href="https://github.com/felixayot"><img src="static/images/github.png" style="width: 40px; height: 40px; border-radius: 5px;"></a></li>
-<li class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/felix-ayot-51a006124"><img src="static/images/linkedin.png" style="width: 40px; height: 40px; border-radius: 5px;"></a></li>
-<li class="fa-brands fa-gmail"><a href="mailto:felixayot@gmail.com"><img src="static/images/gmail-icon.png" style="width: 40px; height: 40px; border-radius: 5px;"><a></li>
-</ul>
-</body>
-<!--<footer><i class="fa-brands fa-github">GitHub</i>✅✅✅</footer>-->
+    <link rel="stylesheet" href="./static/styles/style.css" />
+    <link rel="stylesheet" href="./static/styles/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Navbar header section -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <h2 class="logo-heading">Felix Ayot</h2>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars hamburger-icon"></i>
+          <i class="fas fa-times cross-icon"></i>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-items">
+              <a class="links" href="#home"> Home </a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#portfolio"> Portfolio </a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#about"> About </a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#skills"> Skills </a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#contact"> Contact Me </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+      <div class="intro">
+        <div class="headings">
+          <h3 class="greet-heading">Hello👋, I'm</h3>
+          <h1 class="my-heading"><span
+            style="color: #30D5C8">
+            Felix</span> <span style="color: #6495ED">Ayot</span>
+        </h1>
+          <h4 class="sub-heading">
+            A Software Engineer with 3 years of Experience.
+          </h4>
+        </div>
+        <div class="intro-buttons">
+          <button class="btn common-btn">Hire Me</button>
+          <button class="btn ghost-btn">Get Resume</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-heading">
+        <h1 class="my-heading text-center">Featured Portfolio</h1>
+      </div>
+          <div class="my-col">
+            <div class="my-card port-card">
+              <div class="image">
+                <img
+                  src="./static/images/heza_hp.png"
+                  alt="Web Development Image"
+                />
+                </div>
+              <h3 class="greet-heading blue-text">HezaWorks Job board Web App</h3>
+              <p class="small-para blue-text">
+               A Job Board Platform for Employers to: Acquire talent for their job vacancies or projects, and for Talent to: Get hired for their skills
+             </p>
+             <div class="my-col">
+                <a style="color: #6495ED; text-decoration: none;" href="https://hezaworks.com" target="_blank">
+                  <div class="overlay">
+                    <i class="fas fa-link"></i>
+                    Link to Web App
+                </a>
+            </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h1 class="my-heading">About Me</h1>
+        <p class="lead-para">
+            Hi, my name is Felix Ayot. I am a diligent, and committed brand ambassador
+            with good communication skills and a drive for client commitment. A capable
+            and presentable professional with ability to understand an organization's
+            objectives, industry, and mission statement. Possesses the right technical and
+            software skills and the ability to plan, build, test, and deploy new software
+            applications while maintaining and improving existing ones through ethical
+            software engineering practice, routine client commitment, and user feedback
+            actions. My goal is to be part of the evolution of technology by innovating an
+            astounding technology that impacts positively on the socioeconomic aspects
+            of modern society.
+      </div>
+      <div class="about-image">
+        <img src="https://picsum.photos/seed/picsum/1800/1800" alt="About Image" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="skills-heading">
+        <h1 class="my-heading text-center">My Skills</h1>
+      </div>
+      <div class="skills-content">
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="greet-heading blue-text">Software Engineering</h3>
+              <p class="small-para">
+                I build scalable software applications in popular wed development frameworks like Flask, Django, Laravel and NodeJS.
+              </p>
+              <p class="small-para">
+                If you're looking to collaborate or build software that requires a robust and scalable backend infrastructure, do not hesitate to contact me on any of the below socials.
+              </p>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-kitchen-set"></i>
+              </div>
+              <h3 class="greet-heading blue-text">APIs Design</h3>
+              <p class="small-para">
+                API design and development using RESTful and GraphQL API design principles.
+              </p>
+              <p class="small-para">
+                I design and develop APIs using RESTful and GraphQL API design principles.
+              </p>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 class="greet-heading blue-text">Database Management</h3>
+              <p class="small-para">
+                MySQL and MongoDB database management systems
+              </p>
+              <p class="small-para">
+                I'm very proficient in application data modeling using Object Relational Mapping and data persistence and management using MySQL and MongoDB database management systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h3 class="greet-heading blue-text">Codebase Maintenance</h3>
+              <p class="small-para">
+                Application versioning, source code maintenance using GitHub
+              </p>
+              <p class="small-para">
+                I am proficient in Application versioning, source code maintenance using GitHub version control system tool.
+              </p>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-plane-circle-check"></i>
+              </div>
+              <h3 class="greet-heading blue-text">Application Deployment</h3>
+              <p class="small-para">
+                Linux servers, Nginx and Apache web servers, gunicorn and Process Manager(PM2) Website Gateway Interfaces(WSGI).
+              </p>
+              <p class="small-para">
+                I deploy software seamlessly using Linux servers, Nginx and Apache web servers, and gunicorn and Process Manager(PM2) Website Gateway Interfaces(WSGI).
+              </p>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 class="greet-heading blue-text">Workflow Automation</h3>
+              <p class="small-para">
+                Day-to-day operational tasks automation set-ups using Workflow Automation tools.
+              </p>
+              <p class="small-para">
+                I am proficient in Day-to-day operational tasks automation set-ups using Workflow Automation tools like Make and Zapier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+      <div class="contact-heading">
+        <h1 class="my-heading text-center">Contact Me</h1>
+      </div>
+      <div class="contact-content">
+        <div class="contact-form-container">
+          <h1 class="greet-heading">Get In Touch</h1>
+          <form class="contact-form" action="portfolio.html" method="post">
+            <input class="form-controls" type="text" placeholder="Your Name" />
+            <input class="form-controls" type="email" placeholder="Your Email" />
+            <input class="form-controls" type="text" placeholder="Your Phone" />
+            <textarea
+              class="form-controls"
+              placeholder="Write your message"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            >
+            </textarea>
+            <input
+              class="form-btn btn common-btn"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="contact-details">
+          <h1 class="greet-heading">My Contact Details</h1>
+          <div class="details">
+            <h5 class="contact-heading">EMAIL</h5>
+            <p class="contact-text">ariscladconsult@gmail.com</p>
+          </div>
+          <div class="details">
+            <h5 class="contact-heading">PHONE</h5>
+            <p class="contact-text">+254763 503 815</p>
+          </div>
+          <div class="details">
+            <h5 class="contact-heading">ADDRESS</h5>
+            <p class="contact-text">Nairobi, Kenya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-content text-center">
+        <h4>
+          You Like what you see? Let's connect on any of the below socials
+        </h4>
+        <div class="social-links">
+          <div class="footer-menu">
+            <ul class="footer-menu-list">
+              <li class="footer-list-items">
+                <a class="footer-links" href="mailto:ariscladconsult@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a class="footer-links" href="https://linkedin.com/in/felixayot"
+                target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a class="footer-links" href="https://x.com/felix_ayot"
+                target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a class="footer-links" href="https://github.com/felixayot"
+                target="_blank">
+                <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f5412e515f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
