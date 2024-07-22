@@ -140,14 +140,15 @@ body {
 
 .my-row { 
     display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin: 2rem 0; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 2rem;
 } 
 
 .my-row .my-col { 
-    text-align: center; 
-    width: 30%; 
+    text-align: center;
+    width: 30%;
 } 
 
 .my-card { 
