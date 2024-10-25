@@ -243,10 +243,10 @@
       <div class="contact-content">
         <div class="contact-form-container">
           <h1 class="greet-heading">Get In Touch</h1>
-          <form class="contact-form" action="portfolio.html" method="post">
-            <input class="form-controls" type="text" placeholder="Your Name" />
-            <input class="form-controls" type="email" placeholder="Your Email" />
-            <input class="form-controls" type="text" placeholder="Your Phone" />
+          <form class="contact-form" action="" method="post">
+            <input class="form-controls" id="name" type="text" placeholder="Your Name" required />
+            <input class="form-controls" id="email" type="email" placeholder="Your Email" required />
+            <input class="form-controls" id="phone" type="text" placeholder="Your Phone" required />
             <textarea
               class="form-controls"
               placeholder="Write your message"
@@ -254,24 +254,21 @@
               id="message"
               cols="30"
               rows="10"
+              required
             >
             </textarea>
-            <input
+            <button
               class="form-btn btn common-btn"
               type="submit"
-              value="Send Message"
-            />
+            >Send Message
+            </button>
           </form>
         </div>
         <div class="contact-details">
           <h1 class="greet-heading">My Contact Details</h1>
           <div class="details">
             <h5 class="contact-heading">EMAIL</h5>
-            <p class="contact-text">ariscladconsult@gmail.com</p>
-          </div>
-          <div class="details">
-            <h5 class="contact-heading">PHONE</h5>
-            <p class="contact-text">+254763 503 815</p>
+            <a class="contact-text" href="mailto:ariscladconsult@gmail.com">Email Me</a>
           </div>
           <div class="details">
             <h5 class="contact-heading">ADDRESS</h5>
@@ -323,6 +320,19 @@
       src="https://kit.fontawesome.com/f5412e515f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "PUBLIC_KEY",
+            });
+        })();
+    </script>
     <script src="script.js"></script>
+    <!-- <script src="emailBysmtpjs.js"></script> -->
+    <script src="emailByemailjs.js"></script>
   </body>
 </html>
