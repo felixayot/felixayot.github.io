@@ -9,8 +9,8 @@ function sendEmail(e) {
         phone: document.getElementById("phone").value,
         message: document.getElementById("message").value,
     };
-    const serviceId = "SERVICE_ID";
-    const templateId = "TEMPLATE_ID";
+    const serviceId = "service_jlraanh";
+    const templateId = "template_6rue3kb";
 
     emailjs.send(serviceId, templateId, templateParams).then(() => {
             document.getElementById("name").value = "";
