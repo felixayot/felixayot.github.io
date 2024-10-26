@@ -19,7 +19,8 @@ function sendEmail(e) {
             document.getElementById("message").value = "";
             alert("Your message has been sent. We'll be in touch soon.");
         }, (err) => {
-            alert(err.message);
+            // console.log(err);
+            alert(`Failed with status code ${err.status}`);
         },
     );
 }
